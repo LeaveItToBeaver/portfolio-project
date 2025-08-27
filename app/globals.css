@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, :root { height: 100%; }
+
+:root {
+  --border: 220 13% 91%;
+  --input: 220 13% 91%;
+  --ring: 215 20% 65%;
+  --background: 0 0% 100%;
+  --foreground: 224 71% 4%;
+  --card: 0 0% 100%;
+  --muted-foreground: 215 16% 47%;
+}
+
+.dark {
+  --border: 240 5% 26%;
+  --input: 240 4% 16%;
+  --ring: 240 5% 64%;
+  --background: 240 10% 6%;
+  --foreground: 0 0% 98%;
+  --card: 240 8% 10%;
+  --muted-foreground: 240 5% 68%;
+}
+
+/* TipTap prose defaults */
+.prose pre {
+  overflow-x: auto;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  background: rgba(255,255,255,0.06);
+}
+.prose code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+.tiptap p.is-editor-empty:first-child::before {
+  color: #888;
+  content: attr(data-placeholder);
+  float: left;
+  height: 0;
+  pointer-events: none;
+}
