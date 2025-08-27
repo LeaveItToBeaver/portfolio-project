@@ -1,4 +1,4 @@
-# Jason Portfolio (Next.js + Supabase + TipTap)
+# My Portfolio (Next.js + Supabase + TipTap)
 
 ## Quickstart
 
