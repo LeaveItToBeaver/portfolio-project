@@ -82,22 +82,23 @@ const education: TimelineItem[] = [
   },
   {
     title: "Tech Talent & Strategy Full Stack Development Program",
-    start: "2020",
+    org: "Tech Stack: Angular, JavaScript, Spring, Docker, AWS, Kubernetes",
+    start: "2020 - 2022",
     bullets: [
-      "Intensive full-stack development bootcamp focusing on modern web technologies and best practices"
+      "Intensive full-stack development program focusing on modern web technologies and best practices."
     ]
   }
 ];
 
-export default function AboutPage(){
+export default function AboutPage() {
   return (
     <Container>
       <h1 className="text-3xl font-semibold mb-2">Work History - Jason Beaver</h1>
       <p className="text-muted-foreground mb-8">
-        Full Stack Software Engineer with 4+ years of experience building enterprise applications and SaaS platforms. 
+        Full Stack Software Engineer with 4+ years of experience building enterprise applications and SaaS platforms.
         Proven track record of delivering scalable solutions serving thousands of users, reducing operational costs, and improving system performance.
       </p>
-      
+
       <section className="mb-12">
         <h2 className="text-2xl font-semibold mb-6">Professional Experience</h2>
         <Timeline items={workHistory} />
