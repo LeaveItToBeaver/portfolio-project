@@ -92,7 +92,7 @@ const education: TimelineItem[] = [
 export default function AboutPage(){
   return (
     <Container>
-      <h1 className="text-3xl font-semibold mb-2">Work History - <GradientText>Jason Beaver</GradientText></h1>
+      <h1 className="text-3xl font-semibold mb-2">Work History - Jason Beaver</h1>
       <p className="text-muted-foreground mb-8">
         Full Stack Software Engineer with 4+ years of experience building enterprise applications and SaaS platforms. 
         Proven track record of delivering scalable solutions serving thousands of users, reducing operational costs, and improving system performance.

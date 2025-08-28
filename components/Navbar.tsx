@@ -1,15 +1,10 @@
 'use client';
 import Link from 'next/link';
-import { useTheme } from 'next-themes';
-import { useEffect, useState } from 'react';
 import { useAuth } from '@/lib/AuthProvider';
 import ProfileMenu from '@/features/Users/Views/ProfileMenu';
 
 export default function Navbar() {
-  const { theme, setTheme } = useTheme();
   const { user } = useAuth();
-  const [mounted, setMounted] = useState(false);
-  useEffect(() => setMounted(true), []);
 
   return (
     <header className="sticky top-0 z-30 backdrop-blur border-b border-border">
@@ -27,13 +22,6 @@ export default function Navbar() {
               ✏️ New Post
             </Link>
           )}
-          <button
-            aria-label="Toggle theme"
-            onClick={() => setTheme((theme === 'dark' ? 'light' : 'dark'))}
-            className="rounded-xl border px-3 py-1 hover:bg-white/5"
-          >
-            {mounted ? (theme === 'dark' ? 'Light' : 'Dark') : '…'}
-          </button>
           <ProfileMenu />
         </nav>
       </div>

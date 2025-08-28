@@ -25,19 +25,25 @@ export default function Home() {
               <br /> This is my portfolio and dev blog.
             </p>
             <div className="flex gap-3">
-              <Link href="/projects" className="rounded-2xl px-4 py-2 border shadow-card hover:bg-white/5 transition-colors">
-                View Projects
-              </Link>
-              <Link href="/blog" className="rounded-2xl px-4 py-2 border shadow-card hover:bg-white/5 transition-colors">
-                Read the Blog
-              </Link>
+              <div className="gradient-border gradient-border-hover rounded-2xl transition-all duration-300">
+                <Link href="/projects" className="block px-4 py-2 rounded-xl bg-background shadow-card transition-colors">
+                  View Projects
+                </Link>
+              </div>
+              <div className="gradient-border gradient-border-hover rounded-2xl transition-all duration-300">
+                <Link href="/blog" className="block px-4 py-2 rounded-xl bg-background shadow-card transition-colors">
+                  Read the Blog
+                </Link>
+              </div>
             </div>
           </div>
 
           {/* Right side - Skills */}
           <div className="lg:sticky lg:top-24">
-            <div className="rounded-2xl border p-6 bg-muted/20 backdrop-blur-sm">
-              <SkillsSection />
+            <div className="gradient-border gradient-border-hover rounded-2xl transition-all duration-300">
+              <div className="p-6 bg-background rounded-xl">
+                <SkillsSection />
+              </div>
             </div>
           </div>
         </div>

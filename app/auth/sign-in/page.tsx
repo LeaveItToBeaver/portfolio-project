@@ -14,6 +14,8 @@ export default function SignInPage(){
   const { user } = useAuth();
   const router = useRouter();
 
+  const ALLOWED_EMAILS = ['jasonbeaverw99@gmail.com', 'leaveittobeaver@herdapp.org'];
+
   // Redirect if already authenticated
   useEffect(() => {
     if (user) {
@@ -24,6 +26,11 @@ export default function SignInPage(){
   async function sendMagic(){
     if (!email.trim()) {
       setError('Please enter your email');
+      return;
+    }
+    
+    if (!ALLOWED_EMAILS.includes(email.toLowerCase())) {
+      setError('This email is not authorized for access');
       return;
     }
     
