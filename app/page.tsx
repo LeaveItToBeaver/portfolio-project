@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <Container>
       <section className="items-center">
-        <div className="grid lg:grid-cols-[1fr,400px] gap-12 items-start">
+        <div className="grid lg:grid-cols-[1fr,1fr] gap-12 items-start">
           {/* Left side - Main content */}
           <div className="space-y-6">
             <h1 className="text-4xl md:text-5xl font-bold tracking-tight">

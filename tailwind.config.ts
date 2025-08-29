@@ -27,7 +27,7 @@ const config: Config = {
         card: "0 10px 30px rgba(0,0,0,0.35)",
       },
       fontFamily: {
-        sans: ["ui-sans-serif","system-ui","-apple-system","Segoe UI","Roboto","Inter","Arial","sans-serif"]
+        sans: ["ui-sans-serif", "system-ui", "-apple-system", "Segoe UI", "Roboto", "Inter", "Arial", "sans-serif"]
       },
       backgroundImage: {
         'gradient-noise': `
@@ -51,7 +51,7 @@ const config: Config = {
   },
   plugins: [
     require("tailwindcss-animate"),
-    function({ addUtilities }: any) {
+    function ({ addUtilities }: any) {
       addUtilities({
         '.gradient-border': {
           'background': `

@@ -21,10 +21,10 @@ export default function Projects() {
                 <h2 className="text-xl font-semibold">HERD (Flutter)</h2>
                 <p className="text-sm text-muted-foreground">Passion project of mine - A new way to look at social media.</p>
                 <div className="mt-3 flex gap-3">
-                  <div className="gradient-border rounded-2xl">
+                  <div className="gradient-border gradient-border-hover rounded-2xl">
                     <Link href="/projects/herd" className="block px-3 py-1 bg-background rounded-xl transition-colors">Details</Link>
                   </div>
-                  <div className="gradient-border rounded-2xl">
+                  <div className="gradient-border gradient-border-hover rounded-2xl">
                     <Link href="https://github.com/LeaveItToBeaver/Herd/blob/master/README.md" className="block px-3 py-1 bg-background rounded-xl transition-colors">GitHub</Link>
                   </div>
                 </div>
@@ -41,10 +41,10 @@ export default function Projects() {
                 <h2 className="text-xl font-semibold">amlang</h2>
                 <p className="text-sm text-muted-foreground">Experimental Programming Language with a lexer, parser, and execution engine built in Rust.</p>
                 <div className="mt-3 flex gap-3">
-                  <div className="gradient-border rounded-2xl">
+                  <div className="gradient-border gradient-border-hover rounded-2xl">
                     <Link href="/projects/amlang" className="block px-3 py-1 bg-background rounded-xl transition-colors">Details</Link>
                   </div>
-                  <div className="gradient-border rounded-2xl">
+                  <div className="gradient-border gradient-border-hover rounded-2xl">
                     <Link href="https://github.com/LeaveItToBeaver/algorithmic-mathematics/blob/main/README.md" className="block px-3 py-1 bg-background rounded-xl transition-colors">GitHub</Link>
                   </div>
                 </div>

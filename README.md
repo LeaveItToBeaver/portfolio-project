@@ -15,25 +15,25 @@
    - `SUPABASE_BUCKET` (default `blog-media`)
 
 3. **Tailwind**
-   Already configured. Dark mode is default via `next-themes`.
-
-4. **Supabase**
+   Already configured. Dark & Light mode toggle was removed for styling purposes.
+   
+5. **Supabase**
    - Create a project
    - Run `supabase.sql` in SQL editor
    - Create a public Storage bucket named `blog-media` with public read, authenticated write.
    - In Auth > Providers, enable Magic Link (Email).
 
-5. **Run**
+6. **Run**
    ```bash
    npm run dev
    ```
 
-6. **Create a post**
+7. **Create a post**
    Visit `/admin/new-post` (no auth gate yet in this starter), write with TipTap:
    - Add GIFs/images via the toolbar (uploads to Supabase Storage)
    - Add code blocks (JS/TS/Dart/JSON preloaded)
 
-7. **Architecture (Feature-First)**
+8. **Architecture (Feature-First)**
    ```
    features/
      Blog/
@@ -46,8 +46,3 @@
        Views/
    ```
    App routes import Views from each feature.
-
-## Notes
-- Gradients are used **sparingly** for select text (see `components/GradientText.tsx`) and some borders/shadows.
-- Add auth gating for `/admin/*` via server components or middleware as a next step.
-- Extend TipTap with more languages by registering them in the editor component.
